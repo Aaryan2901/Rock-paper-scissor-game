@@ -1,0 +1,25 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+# import the random module
+import random
+
+# list of possible moves
+moves = ['rock', 'paper', 'scissors']
+
+# prompt the user to make a move
+user_move = input("Enter your move (rock, paper, scissors): ")
+
+# generate a random move for the computer
+computer_move = random.choice(moves)
+
+# compare the moves to determine the winner
+if user_move == computer_move:
+    print("It's a tie!")
+elif user_move == 'rock' and computer_move == 'scissors':
+    print("You win! Rock beats scissors.")
+elif user_move == 'paper' and computer_move == 'rock':
+    print("You win! Paper beats rock.")
+elif user_move == 'scissors' and computer_move == 'paper':
+    print("You win! Scissors beats paper.")
+else:
+    print("The computer wins. Better luck next time.")
